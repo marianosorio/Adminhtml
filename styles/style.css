@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/*-----LANDING PAGE-----*/
+#navprincipal {
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    width: 99vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(255, 255, 255),  #000000);
+  }
+
+  #logonav {
+    margin: 12px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99vw;
+    height: 1vh;
+  }
+  #logonavprincipal {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 10rem;
+    height: 5rempx;
+    margin-top: 1rem;
+  }
+  
+  .logo img {
+    width: 23rem;
+  }
+
+  .navprincipal button {
+    background-color: rgba(28, 28, 29, 0.5);
+  }
+  
+  #loginboton {
+    background-color: #17171863;
+    color: #fff;
+    font-size: 100%;
+    font-family: "Inter", sans-serif;
+    margin-top: 2rem;
+    margin-right: 5rem;
+    margin-left: 50rem;
+    width: 15%;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+  }
