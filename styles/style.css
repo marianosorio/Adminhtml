@@ -55,3 +55,278 @@
     border-radius: 10px;
     border: none;
   }
+
+ #contenedor-img {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transform: translateX(20vh);
+  }
+  
+  .contenedor-bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    width: 50%;
+  }
+  .contenedor-bienvenida .contenedorb1 {
+    margin-top: 15vh;
+    margin-left: -50px;
+
+    font-family: "Inter", sans-serif;
+    text-align: center;
+  }
+  .contenedor-bienvenida p {
+    margin-left: 200px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #bienvenida {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 148px;
+    margin-top: 0;
+    font-family: "Inter", sans-serif;
+    
+  }
+
+  #bienvenida2 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 0;
+    font-family: "Inter", sans-serif;
+  }
+
+  .contenedor-bienvenida .info {
+    text-align: center;
+    color: white;
+    margin-top: 120px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .contenedor-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+    width: 100%;
+  }
+
+  
+#imgcel {
+  position: absolute;
+  width: 60rem;
+  margin-left: 70rem;
+  margin-top: -30rem;
+}
+
+/*-----INICIO DE SESION------*/
+
+.login{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  
+}
+
+/* Estilo del fondo negro semitransparente */
+.fondo-negro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo del contenedor del formulario */
+.contenedor-formulario {
+  color: white;
+  width: 65vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 27px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin-top: 36rem;
+  margin-left: -11rem;
+}
+
+ /* Estilo para el formulario */
+ form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+/* Estilo para los elementos del formulario */
+label, input {
+  margin: 8px auto;
+  width: calc(100% 10px);
+  padding: 8px;
+  box-sizing: border-box;
+  width: 24rem;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+}
+
+input[type="submit"]{
+  width: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  background-image: linear-gradient(to left,#2a2a2b, #f2eef3);
+  border: none;
+}
+
+/*-----Pantalla principal-----*/
+#contenedor-search{
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  width: 99vw;
+  height: vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-label{
+  width: 70vw;
+  height: 55px;
+  border-radius: 30px;
+  background-color: rgb(214, 211, 218);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3rem;
+  margin-top: 15vh;
+}
+#search{
+  margin: 12px auto;
+  color: rgb(0, 0, 0);
+  width: 90%;
+  margin-left: 0%;
+  background: transparent;
+  border: 0px solid;
+  font-family: Inter;
+  font-size: 1.2rem;
+}
+
+.opcion-user{
+    background-color: #000000;
+    color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    font-size: 4rem;
+    margin-left: 4rem;
+    margin-top: 15vh;
+  
+}
+
+.lupita{
+  color: #000000;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  font-size: 1.7rem;
+
+}
+
+#contenedor-carpetas{
+  width: 99vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  margin-top: 5rem;
+
+}
+
+.contenedor-carpetas .infocarpetas {
+  color: white;
+  margin-top: 7rem;
+  margin-left:13rem;
+  font-family: "Inter";
+}
+
+input[type="button"]{
+  width: 25rem;
+  margin-top: 20px;
+  margin-left:13rem;
+  height: 2.563rem;
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+  cursor: pointer;
+  background-color: rgb(53, 49, 60);
+  border: none;
+  font-family: Inter;
+  font-size: 17px;
+  color: #fff;
+  position: relative;
+}
+
+#botonCrearCarpeta{
+  width: 130px;
+  margin-top: 20px;
+  margin-left:13rem;
+  height: 3.4rem;
+  display: flex;
+  justify-content: left;
+  padding-left: 15px;
+  cursor: pointer;
+  background-color: rgb(139, 145, 189);
+  border: none;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 17px;
+  color: #fff;
+  position: relative;
+  
+}
+
+#buttonFile{
+  width: 130px;
+  margin-top: 20px;
+  margin-left:13rem;
+  height: 3.4rem;
+  display: flex;
+  justify-content: left;
+  padding-left: 15px;
+  cursor: pointer;
+  background-color: rgb(139, 145, 189);
+  border: none;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 17px;
+  color: #fff;
+  position: relative;
+  
+}
