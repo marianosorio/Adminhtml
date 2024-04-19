@@ -10,9 +10,29 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\user\Documents\POO\AdminHtml\styles\style.css">
+    <title>Login</title>
 </head>
-<body style="background-color: white;">
-    
+<body style="background-color: rgb(197, 189, 189);">
+    <body class="login">
+        <div id="logonav">
+            <div id="logonavprincipal">
+                <div class="logo">
+                    <img src="C:\Users\user\Documents\POO\AdminHtml\assets\logo_sinfondo.png" alt="">
+                </div>
+            </div>
+        <div class="fondo-negro">
+            <div class="contenedor-formulario">
+              <h2>Inicio de sesión</h2>
+              <p>Inicia sesion con la cuenta del sistema</p>
+              <form id="loginForm" onsubmit="return getPrincipal();">
+                <label for="usuario">Correo electronico:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required><br>
+                <input type="submit" onclick = "getPrincipal()" value ="Iniciar sesión"><br>
+
+
+    <script src="C:\Users\user\Documents\POO\AdminHtml\scripts\script.js"></script>  
 </body>
 </html>
