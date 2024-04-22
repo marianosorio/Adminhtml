@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="C:\Users\user\Documents\POO\AdminHtml\assets\logo.jpg">
+    <script src="https://kit.fontawesome.com/33c3fc8b29.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/33c3fc8b29.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="C:\Users\user\Documents\POO\AdminHtml\styles\style.css">
+    <title>Principal</title>
+</head>
+<body style="background-color: black;">
+    <nav id="contenedor-search">
+        <div id="logonav">
+            <div id="logonavprincipal">
+                <div class="logo">
+                    <img src="assets/img/Logomorado.png" alt="">
+                </div>
+                <label for="search" class="search-label">
+                    <div class="lupita">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    <input type="search" name="" id="search"  placeholder="Buscar en el sistema" style="color: black;" >
+
+                </label>
+                <div class="opcion-user">
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+            </div>
+        </nav>
+
+    
+     <section class = "contenedor-carpetas">
+             <div class="infocarpetas">
+             <h1>Creación de un nuevo expediente</h1>
+             <h3>Para la realización de un expediente, debe llenar toda la información requerida, a continuación se muestran <br>las opciones que debe seleccionar y completar.</br></h3>
+             </div>
+             <form>
+                <input type="button" style="background-color: #8e99b3;" onclick="getInfodemandado()" value="Información del demandado"><br>
+                </div>
+                
+             </form>
+             <form>
+                <input type="button" onclick="getInfodemandante()" value="Información del demandante"><br>
+             </form>
+             <form>
+                <input type="button" style="background-color:#8e99b3;" onclick="getInfotestigo()"value="Información del testigo"><br>
+             </form>
+             <form>
+                <input type="button" onclick="getInfopolicia()"value="Información del policía"><br>
+             </form>
+             <div id="img1nav">
+                <div id="img1navprincipal">
+                    <div class="img1">
+                        <img src="C:\Users\user\Documents\POO\AdminHtml\assets\img1sinfondo.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            </section>
+
+            
+    
+            <script src="C:\Users\user\Documents\POO\AdminHtml\scripts\script.js"></script> 
+</body>
+</html>
