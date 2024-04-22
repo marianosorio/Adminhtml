@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="C:\Users\user\Documents\POO\AdminHtml\assets\logo.jpg">
+    <script src="https://kit.fontawesome.com/33c3fc8b29.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/33c3fc8b29.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="C:\Users\user\Documents\POO\AdminHtml\styles\style.css">
+    <title>Información del demandado</title>
+   
+</head>
+
+<body style="background-color: #1d1e42">
+    <nav id="navprincipal1">
+        <div class="infotitulo1">
+        <h1> Información del demandado</h1>
+         </div>  
+         <div id="logonav1">
+            <div id="logonav1principal">
+                <div class="logo1">
+                    <img src="C:\Users\user\Documents\POO\AdminHtml\assets\logo_sinfondo.png" alt="">
+                </div>
+            </div>
+    </nav>
+    <h2>Ingrese la información de la persona que está siendo denunciada.</h2>
+    <nav id="navnombre1">
+        <div class="infotitulo1">
+        <h3> Nombre:</h3>
+         </div> 
+         <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+    </nav>
+    <nav id="navapellido1">
+    <div class="infotitulo1">
+        <h3 style="margin-right: 30vh;">Apellido:</h3>
+         </div> 
+         <input type="text" id="nombre" name="nombre" placeholder="Ingrese el apellido">
+     </nav>
+     <nav id="navgenero1">
+        <div class="infotitulo1">
+            <h3 style="margin-left: -4vh;">Género:</h3>
+            <input type="radio" style="margin-top: 10rem;" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label><br>
+            
+            <input type="radio" id="otro" name="genero" value="otro">
+            <label for="otro">Otro</label><br>
+             </div>
+             <nav id="navID1">
+                <div class="infotitulo1">
+                    <h3 style="margin-right: 30vh;">Número de identidad:</h3>
+                     </div> 
+                     <input type="text" id="nombre" name="nombre" placeholder="Ingrese el ID">
+                 </nav> 
+            <nav id="navsex1">
+                 <div class="infotitulo1">
+                     <h3 style="margin-right: 30vh;">Sexo:</h3>
+                    </div> 
+                 <input type="text" id="sexo" name="sexo" placeholder="Ingrese el sexo (H o M)">
+                </nav> 
+    
+            <nav id="navdelitos1">
+                <div class="infotitulo1">
+                     <h3 style="margin-right: 30vh;">Delitos:</h3>
+                 </div> 
+                 <select id="delitos" name="delitos" multiple>
+                    <option value="H">1. Estafa</option>
+                    <option value="M">2. Robo</option>
+                    <option value="M">3. Fraude</option>
+                    <option value="M">4. Homicidio</option>
+                    <option value="M">5. Secuestro</option>
+                </select>
+         </nav>
+         <div id="opcionesElegidas"></div>
+
+         <script> document.getElementById("delitos").addEventListener("change", function() {
+            var seleccionadas = [];
+            var opciones = this.selectedOptions;
+            for (var i = 0; i < opciones.length; i++) {
+                seleccionadas.push(opciones[i].text);
+            }
+            mostrarSeleccionadas(seleccionadas);
+        });
+    
+        function mostrarSeleccionadas(seleccionadas) {
+            var seleccionadasStr = seleccionadas.join(", ");
+            alert("Delitos seleccionados:\n" + seleccionadasStr);
+        }</script>
+
+
+
+         <script src="C:\Users\user\Documents\POO\AdminHtml\scripts\script.js"></script> 
+</body>
+</html>
