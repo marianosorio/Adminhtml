@@ -11,11 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="C:\Users\user\Documents\POO\AdminHtml\styles\style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <title>Información del demandado</title>
    
 </head>
 
 <body style="background-color: #1d1e42">
+   
+        
+    
     <nav id="navprincipal1">
         <div class="infotitulo1">
         <h1> Información del demandado</h1>
@@ -28,6 +34,7 @@
             </div>
     </nav>
     <h2>Ingrese la información de la persona que está siendo denunciada.</h2>
+    <div class="container">
     <nav id="navnombre1">
         <div class="infotitulo1">
         <h3> Nombre:</h3>
@@ -38,7 +45,7 @@
     <div class="infotitulo1">
         <h3 style="margin-right: 30vh;">Apellido:</h3>
          </div> 
-         <input type="text" id="nombre" name="nombre" placeholder="Ingrese el apellido">
+         <input type="text" id="nombre" name="apellido" placeholder="Ingrese el apellido">
      </nav>
      <nav id="navgenero1">
         <div class="infotitulo1">
@@ -56,7 +63,7 @@
                 <div class="infotitulo1">
                     <h3 style="margin-right: 30vh;">Número de identidad:</h3>
                      </div> 
-                     <input type="text" id="nombre" name="nombre" placeholder="Ingrese el ID">
+                     <input type="text" id="nombre" name="id" placeholder="Ingrese el ID">
                  </nav> 
             <nav id="navsex1">
                  <div class="infotitulo1">
@@ -66,20 +73,51 @@
                 </nav> 
     
             <nav id="navdelitos1">
-                <div class="infotitulo1">
+                <div class="infodelitos">
                      <h3 style="margin-right: 30vh;">Delitos:</h3>
                  </div> 
+                 <div class="custom-select2">
                  <select id="delitos" name="delitos" multiple>
-                    <option value="H">1. Estafa</option>
-                    <option value="M">2. Robo</option>
-                    <option value="M">3. Fraude</option>
-                    <option value="M">4. Homicidio</option>
-                    <option value="M">5. Secuestro</option>
+                    <option value="E">Estafa</option>
+                    <option value="R">Robo</option>
+                    <option value="F">Fraude</option>
+                    <option value="H1"> Homicidio</option>
+                    <option value="S">Secuestro</option>
                 </select>
+                 </div>
          </nav>
-         <div id="opcionesElegidas"></div>
+         <div id="opcionesElegidas"></div> 
 
-         <script> document.getElementById("delitos").addEventListener("change", function() {
+         <nav id="navdirec1">
+            <div class="infotitulo1">
+                <h3 style="margin-right: 30vh;">Dirección:</h3>
+               </div> 
+               
+                <label style="margin-left: -12.7rem;" for="numero">Número de casa:</label>
+                <input style="margin-left: -12.7rem; width: 10rem; "  type="text" id="casa" name="numero" placeholder="Número de casa">
+            
+                <label style="margin-top: -6rem; margin-left: 3.5rem;" for="calle">Calle:</label>
+                <input style="width: 10rem;" type="text" id="calle" name="calle" placeholder="Calle">
+            
+                <label style="margin-left: -12.7rem; margin-top: 2rem;" for="ciudad">Ciudad:</label>
+                <input style="margin-left: -12.7rem; width: 10rem;" type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+            
+                <label style="margin-top: -6rem; margin-left: 3.5rem;" for="departamento">Departamento:</label>
+                <input style="width: 10rem;" type="text" id="departamento" name="departamento" placeholder="Departamento">
+            
+           </nav> 
+
+           <nav id="navantecedentes1">
+            <div class="infotitulo1">
+                <h3 style="margin-right: 30vh;">Antecedentes:</h3>
+               </div> 
+            <input type="text" id="antecedentes" name="antecedentes" placeholder="Ingrese los antecedentes del demandado (si es que los posee)">
+
+           </nav> 
+           <button style="margin-right: 50rem; margin-top: 3rem; cursor: pointer;" type="buttonnext" onclick="getInfodemandante()"  id="loginboton">Siguiente</button>
+        </div>
+         
+        <script> document.getElementById("delitos").addEventListener("change", function() {
             var seleccionadas = [];
             var opciones = this.selectedOptions;
             for (var i = 0; i < opciones.length; i++) {
@@ -92,7 +130,8 @@
             var seleccionadasStr = seleccionadas.join(", ");
             alert("Delitos seleccionados:\n" + seleccionadasStr);
         }</script>
-
+        
+        
 
 
          <script src="C:\Users\user\Documents\POO\AdminHtml\scripts\script.js"></script> 
