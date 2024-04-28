@@ -194,14 +194,16 @@ label, input {
   border-radius: 12px;
 }
 
-input[type="submit"]{
+input[type="button"]{
   width: auto;
+
   margin-top: 20px;
   display: flex;
   justify-content: center;
   cursor: pointer;
-  background-image: linear-gradient(to left,#2a2a2b, #f2eef3);
+  background-image: linear-gradient(to left,#2a2a2b, #343335);
   border: none;
+  width: 10vw;
 }
 
 /*-----Pantalla principal-----*/
@@ -442,6 +444,8 @@ h2 {
   align-items: center;
   flex-direction: column;
   background:   #1d1e42;
+  margin-left: 1.2rem;
+  
 }
 
 #navnombre1 h3 {
@@ -449,7 +453,8 @@ h2 {
   font-size: 3vh;
   color: #ffffff;
   text-align: left;
-  margin-left: -35rem;
+  margin-left: -36rem;
+  
 }
 
 #navnombre1 input[type="text"] {
@@ -471,8 +476,8 @@ h2 {
   align-items: center;
   flex-direction: column;
   background:   #1d1e42;
-  margin-left: 24rem;
-  margin-top: -8rem;
+  margin-left: 25rem;
+  margin-top: -7.5rem;
 }
 
 #navapellido1 h3 {
@@ -582,7 +587,7 @@ h2 {
   flex-direction: column;
   background:   #1d1e42;
   margin-left: -48rem;
-  margin-top: -8rem;
+  margin-top: -7.8rem;
 }
 
 #navsex1 h3 {
@@ -614,8 +619,14 @@ h2 {
   align-items: center;
   flex-direction: column;
   background:   #1d1e42;
-  margin-left: -48rem;
-  margin-top: 2.6rem;
+  margin-left: 44rem;
+  margin-top: 1rem;
+}
+
+.navprincipal1 .infodelitos {
+  color: rgb(94, 82, 82);
+ 
+  font-family: "Inter", sans-serif;
 }
 
 #navdelitos1 h3 {
@@ -656,4 +667,181 @@ option {
   font-size: 14px; /* Tamaño de fuente */
   font-family: "Inter" sans-serif;
   color: #ccc;
+}
+
+.custom-select2 {
+  width: 300px;
+  margin-right: -65.6rem;
+
+
+}
+.select2-results__option {
+  padding: 8px 12px;
+  font-family: "Inter", sans-serif;
+  
+}
+
+.select2-selection__choice {
+  background-color: #72210c;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-family: "Inter", sans-serif;
+
+
+}
+
+#navdirec1 {
+  background-color: rgb(255, 255, 255);
+  width: 20vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background:   #1d1e42;
+  margin-right: 76rem;
+  margin-top:-3.2rem;
+}
+
+#navdirec1 h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 3vh;
+  color: #ffffff;
+  text-align: left;
+  margin-left: -20.7rem;
+  margin-top: 1.40rem;
+}
+
+
+#navdirec1 input [type="text"]{
+  color: #333;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  width: -30rem;
+  margin-left: -10.83rem;
+  margin-top: 0.5rem;
+  
+}
+
+
+
+#navantecedentes1 {
+  background-color: rgb(255, 255, 255);
+  width: 20vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background:   #1d1e42;
+  margin-left: -1.9rem;
+  margin-top: -2rem;
+}
+
+#navantecedentes1 h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 3vh;
+  color: #ffffff;
+  text-align: left;
+  margin-left: -5rem;
+  margin-top: 1.88rem;
+}
+
+#navantecedentes1 input[type="text"] {
+  color: #333;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  width: 24rem;
+  margin-left: -2.80rem;
+  margin-top: 0.5rem;
+  height: 100vh;
+}
+
+#navrelacion {
+  background-color: rgb(255, 255, 255);
+  width: 20vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background:   #1d1e42;
+  margin-left: -1.9rem;
+  margin-top: -2rem;
+}
+
+#navrelacion h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 3vh;
+  color: #ffffff;
+  text-align: left;
+  margin-left: -3rem;
+  margin-top: 1.88rem;
+}
+
+#navrelacion input[type="text"] {
+  color: #333;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  width: 24rem;
+  margin-left: -2.80rem;
+  margin-top: 0.5rem;
+  max-height: 80rem;
+  
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  width: 78rem; 
+  margin-left: 2.5rem; 
+  background-color: #1d1e4269; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  border:  solid #ffffff;
+  height: 40rem;
+  
+}
+
+
+
+#navdirec2 {
+  background-color: rgb(255, 255, 255);
+  width: 20vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background:   #1d1e42;
+  margin-right: 76rem;
+  margin-top:1.2rem;
+}
+
+#navdirec2 h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 3vh;
+  color: #ffffff;
+  text-align: left;
+  margin-left: -20.7rem;
+  margin-top: 1.40rem;
+}
+
+
+#navdirec2 input [type="text"]{
+  color: #333;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  width: -30rem;
+  margin-left: -10.83rem;
+  margin-top: 0.5rem;
+  
 }
